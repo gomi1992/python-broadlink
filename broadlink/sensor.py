@@ -68,7 +68,7 @@ class a2(Device):
         packet[0x06] = checksum & 0xFF
         packet[0x07] = checksum >> 8
 
-        packet_len = len(packet) - 2
+        packet_len = len(packet)
         packet[0x00] = packet_len & 0xFF
         packet[0x01] = packet_len >> 8
 
